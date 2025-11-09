@@ -1,5 +1,7 @@
 // frontend/src/api/apiClient.js
-const BASE = " https://discussionforum-vfqc.onrender.com";
+const BASE =
+    import.meta.env.VITE_API_URL ||
+    " https://discussionforum-vfqc.onrender.com";
 
 async function request(path, options = {}) {
     const res = await fetch(`${BASE}${path}`, options);
