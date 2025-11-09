@@ -1,5 +1,5 @@
 // frontend/src/api/apiClient.js
-const BASE = "http://localhost:5000";
+const BASE = " https://discussionforum-vfqc.onrender.com";
 
 async function request(path, options = {}) {
     const res = await fetch(`${BASE}${path}`, options);
